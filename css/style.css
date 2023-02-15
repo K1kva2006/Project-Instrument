@@ -15,8 +15,13 @@ body {
     margin: 0 auto;
     padding: 25px;
 }
+
 .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -102,9 +107,11 @@ header {
 .nav-li>a:active {
     color: grey;
 }
+
 .nav-bar {
     display: none;
 }
+
 /*header-end*/
 
 /*s-1*/
@@ -326,7 +333,7 @@ footer {
 .footer-div-1-ul>li:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
-    transform: scale(1.1);
+    transform: scale(1.1) translateX(10px);
 }
 
 .footer-active {
@@ -344,7 +351,7 @@ footer {
     background-color: black;
     color: white;
     -webkit-box-shadow: 1px 1px 10px white;
-    box-shadow: 1px 1px 10px white;
+    box-shadow: 0.5px 0.5px 4px white;
     cursor: pointer;
     opacity: 0.8;
     -webkit-transition: all 0.5s;
