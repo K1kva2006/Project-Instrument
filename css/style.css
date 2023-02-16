@@ -110,7 +110,11 @@ header {
 
 .nav-bar {
     display: none;
+    transition: all 0.15s;
 }
+.nav-bar:hover {
+    transform: scale(1.1);
+} 
 
 /*header-end*/
 
@@ -270,6 +274,7 @@ header {
     -ms-flex-pack: justify;
     justify-content: space-between;
     margin-top: 150px;
+    margin-bottom: 50px;
 }
 
 .s-6-secondary-div>img {
@@ -358,6 +363,7 @@ footer {
     -o-transition: all 0.5s;
     transition: all 0.5s;
     margin-top: 100px;
+    margin-right: 25px;
 }
 
 .footer-button:hover {
